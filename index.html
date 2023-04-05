@@ -68,9 +68,28 @@
   width: 100px;
   height: 100px;
   border-radius: 50%;
+          
+              video {
+			position: fixed;
+			top: 0;
+			left: 0;
+			min-width: 100%;
+			min-height: 100%;
+			object-fit: cover;
+			z-index: -1;}
+    </style>    
 }
     </style>    
 </head>
+    
+</head>
+
+<video autoplay muted loop>
+		<source src="video.mp4" type="video/mp4">
+		<source src="video.webm" type="video/webm">
+		Your browser does not support the video tag.
+	</video>
+
 
 <body>
 <div>
