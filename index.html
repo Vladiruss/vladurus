@@ -38,12 +38,29 @@
 
     h1{
         font-family: "Vlad";
+        animation: appear 2s ease forwards;
     }
 
     p{
         font-family: "Vlad";
         color: #68686d;
+        animation: appear 6s ease forwards;
+
     }
+
+    @keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+
+}
+
 
     a {
     background-color: #7f3eca; 
@@ -90,8 +107,8 @@ video {
 <div>
     <p><img src="image1.png" alt="Письма мастера дзен"></p>
     <h1>Владирус</h1>
-    <p>Великий творец, музыкант, программист, киберспортсмен и создатель лучшего сервера по майнкрафту - #SoF</p>
-    <p><a href="https://discord.gg/jZudXQM">Ссылка на дискорд</a></p>
+    <p class="animation">Великий творец, музыкант, программист, киберспортсмен и создатель лучшего сервера по майнкрафту - #SoF</p>
+    <p><a href="discord.gg/jZudXQM">Ссылка на дискорд</a></p>
     <p><a href="https://www.twitch.tv/vladirus228">Ссылка на твич</a></p>
     <p><a href="https://www.donationalerts.com/r/vladirus">Ссылка на донат</a></p>
 </div>
